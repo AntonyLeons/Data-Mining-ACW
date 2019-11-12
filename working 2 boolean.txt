@@ -1,0 +1,29 @@
+
+CREATE TABLE public."Data_table"
+(
+    "Random" character varying COLLATE pg_catalog."default",
+    "Id" integer,
+    "Indication" character varying COLLATE pg_catalog."default",
+    "Diabetes" bool ,
+    "IHD" bool  ,
+    "Hypertension" bool  ,
+    "Arrhythmia" bool ,
+    "History" bool ,
+    "IPSI" character varying,
+    "Contra" character varying,
+    "Risk" character varying COLLATE pg_catalog."default",
+    "Key" bigint NOT NULL DEFAULT nextval('"Data_table_Key_seq"'::regclass),
+    CONSTRAINT "Data_table_pkey" PRIMARY KEY ("Key")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."Data_table"
+    OWNER to postgres;
+
+GRANT ALL ON TABLE public."Data_table" TO api;
+
+GRANT ALL ON TABLE public."Data_table" TO postgres;
+
+COPY "Data_table"("Random", "Id", "Indication", "Diabetes", "IHD", "Hypertension", "Arrhythmia", "History", "IPSI", "Contra", "Risk")
+FROM 'C:\Users\anton\Documents\GitHub\Data-Mining-ACW\600092_dataBool.csv' DELIMITER ',' CSV HEADER;
