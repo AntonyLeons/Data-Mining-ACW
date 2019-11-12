@@ -45,4 +45,4 @@ GRANT ALL ON TABLE public."Data_table" TO api;
 GRANT ALL ON TABLE public."Data_table" TO postgres;
 
 COPY "Data_table"("Random", "Id", "Indication", "Diabetes", "IHD", "Hypertension", "Arrhythmia", "History", "IPSI", "Contra", label)
-FROM 'C:\Users\anton\Documents\GitHub\Data-Mining-ACW\600092_data.csv' DELIMITER ',' CSV HEADER;
+FROM 'C:\Users\anton\Documents\GitHub\Data-Mining-ACW\data\600092_data.csv' DELIMITER ',' CSV HEADER;
