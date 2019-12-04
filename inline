@@ -1,0 +1,30 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import random as rand # import libs\n",
+    "import seaborn as sns\n",
+    "import sklearn\n",
+    "import sklearn.tree as tree\n",
+    "from sklearn.metrics import confusion_matrix\n",
+    "from sklearn.linear_model import LogisticRegression\n",
+    "import scikitplot as skplt\n",
+    "from sklearn.preprocessing import OneHotEncoder\n",
+    "from sklearn import preprocessing\n",
+    "from sklearn.tree import DecisionTreeClassifier\n",
+    "import matplotlib.pyplot as plt\n",
+    "from sklearn.tree import plot_tree\n",
+    "from sklearn.neural_network import MLPClassifier"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
